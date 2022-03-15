@@ -1,31 +1,36 @@
+@font-face{
+    font-family: mainfont;
+    src: url(GreatVibes-Regular.ttf);
+}
 
 body{
-    background-image: url(./img/bgg.jpg);
+    font-family: mainfont;
+    background-image: url(./img/bgMb.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: #2f3436;
 }
 
 
-.video h1{
-    font-family: abril;
-    color: red;
+.video{
     text-align: center;
+    font-family: abril;
     margin: 60px 10px 40px 10px;
-    font-size: 80px;
+    font-size: 16pt;
     font-weight: bold;
     text-shadow: 2px 2px 8px rgb(51, 49, 49);
 }
 
-
 .video-mp4 video{
     display: block;
-    width: 350px;
+    width: 60%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 
 }
 
@@ -43,40 +48,44 @@ body{
 
 
 footer{
+    justify-content: center;
+    /* color: rgb(240, 71, 71); */
+    color: #566266;
     text-align: center;
     padding: 21px;
     height: 140px;
-    margin-top: 40px;
+    font-size: 18pt;
 }
-
-
 footer a{
     color: var(--txt-color);
 }
-
 footer img{
-    width: 30px;
+    width: 4rem;
     height: auto;
-    margin: 10px 5px 10px 5px;
+    margin: 1rem 1.2rem 2em;
+}
+.socialLinks{
+    display: flex;
+    justify-content: center;
+
+}
+
+@media screen and (min-width: 600px) {
+    body{
+        background-image: url(img/bgPc.png);
+    }    
 }
 
 /* Desktop css*/
-
 @media screen and (min-width: 992px) {
-
-
     .video-mp4 video{
-        width: 700px;
+        width: 70%;
         height: auto;
         
     }
 
     .video{
         margin: 100px 200px 15px 200px;
+        font-size: 28pt;
     }
-
-    .video h1{
-        font-size: 130px;
-    }
-
 }
