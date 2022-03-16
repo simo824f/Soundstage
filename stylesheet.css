@@ -10,12 +10,13 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #2f3436;
+    margin: 0;
 }
 
 
 .video{
     text-align: center;
-    font-family: abril;
+    font-family: 'Cookie', cursive;
     margin: 60px 10px 40px 10px;
     font-size: 16pt;
     font-weight: bold;
@@ -26,34 +27,14 @@ body{
     display: block;
     width: 80%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin: 80px auto 0 auto;
     border-radius: 10px;
-
 }
-
-.back{
-    margin: 50px 20px 10px 20px;
-}
-
-.back a{
-    color: var(--txt-color);
-}
-
-.back a:hover {
-    color: var(--link-hover-color);
-}
-
-
 footer{
     justify-content: center;
-    /* color: rgb(240, 71, 71); */
     color: #566266;
     text-align: center;
-    padding: 21px;
-    height: 140px;
+    padding: 16px;
     font-size: 18pt;
 }
 footer a{
@@ -62,41 +43,49 @@ footer a{
 footer img{
     width: 4rem;
     height: auto;
-    margin: 1rem 1.2rem 2em;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .socialLinks{
     display: flex;
     justify-content: center;
-
+    height: 80px
 }
 
+/* Tablet */
 @media screen and (min-width: 600px) {
     body{
         padding-top: 8em;
         background-image: url(img/bgPc.png);
 
         background-position-x: right;
-    }    
+    }
     .video{
         font-size: 24pt;
     }
     .video-mp4 video{
         width: 80%;
     }
+    footer{
+        font-size: 30pt;
+    }
 }
 
 /* Desktop css*/
 @media screen and (min-width: 992px) {
     body{
-        padding-top: 2em;
+        padding: 0;
     }
     .video-mp4 video{
-        width: 70%;
-        height: auto;   
+        width: 40%;
+        height: auto;
     }
 
     .video{
-        margin: 1em 200px 15px 200px;
-        font-size: 28pt;
+        margin: 1em 200px 0 200px;
+        font-size: 26pt;
+    }
+    footer{
+        font-size: 26pt;
     }
 }
