@@ -9,7 +9,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #2f3436;
+    color: #000000;
     margin: 0;
 }
 
@@ -20,7 +20,7 @@ body{
     margin: 60px 10px 40px 10px;
     font-size: 16pt;
     font-weight: bold;
-    text-shadow: 2px 2px 8px rgb(51, 49, 49);
+    text-shadow: 2px 2px 8px rgb(189, 205, 250);
 }
 
 .video-mp4 video{
@@ -32,10 +32,11 @@ body{
 }
 footer{
     justify-content: center;
-    color: #566266;
+    color: #030303;
     text-align: center;
     padding: 16px;
     font-size: 18pt;
+    text-shadow: 2px 2px 8px rgb(131, 110, 102);
 }
 footer a{
     color: var(--txt-color);
