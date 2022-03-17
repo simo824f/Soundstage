@@ -11,24 +11,27 @@ body{
     background-attachment: fixed;
     color: #000000;
     margin: 0;
+    cursor: none;
 }
 
-
-.video{
+h1{
     text-align: center;
     font-family: 'Cookie', cursive;
-    margin: 60px 10px 40px 10px;
-    font-size: 16pt;
+    margin: 60px 10px 10px 10px;
+    font-size: 60pt;
     font-weight: bold;
     text-shadow: 2px 2px 8px rgb(189, 205, 250);
 }
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-.video-mp4 video{
-    display: block;
-    width: 80%;
-    height: auto;
-    margin: 80px auto 0 auto;
-    border-radius: 10px;
+.video-mp4{
+    display: flex; 
+    justify-content: center;
+    padding: 10px;
+    
 }
 footer{
     justify-content: center;
@@ -36,7 +39,7 @@ footer{
     text-align: center;
     padding: 16px;
     font-size: 18pt;
-    text-shadow: 2px 2px 8px rgb(131, 102, 108);
+    text-shadow: 2px 2px 8px rgb(206, 195, 197);
 }
 footer a{
     color: var(--txt-color);
@@ -46,17 +49,31 @@ footer img{
     height: auto;
     margin-left: 1rem;
     margin-right: 1rem;
+    filter: drop-shadow(5px 7px 20px rgb(255, 255, 255));
+    
 }
 .socialLinks{
     display: flex;
     justify-content: center;
     height: 80px
 }
+.cursor{
+    width: 5rem;
+    height: 5rem;
+    border: 3px solid;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    backdrop-filter:  blur(1px) invert();
+    z-index: 1;
+    
+}
 
 /* Tablet */
 @media screen and (min-width: 600px) {
     body{
-        padding-top: 8em;
+        padding-top: 2em;
         background-image: url(img/bgg.jpg);
 
         background-position-x: right;
